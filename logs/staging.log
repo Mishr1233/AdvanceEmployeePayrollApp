@@ -217,3 +217,7 @@ Caused by: java.lang.IllegalArgumentException: Unrecognized 'hibernate.hbm2ddl.a
 2025-02-26 13:39:33 [http-nio-4040-exec-5] INFO  c.e.E.service.EmployeeService - Fetching all employees from database
 2025-02-26 13:39:33 [http-nio-4040-exec-5] INFO  c.e.E.service.EmployeeService - Retrieved 8 employees
 2025-02-26 13:39:33 [http-nio-4040-exec-5] INFO  c.e.E.controller.EmployeeController - Retrieved 8 employees
+2025-02-26 13:57:32 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 12040 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-26 13:57:32 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-26 13:57:36 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-26 13:57:37 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.796 seconds (process running for 6.395)
