@@ -221,3 +221,26 @@ Caused by: java.lang.IllegalArgumentException: Unrecognized 'hibernate.hbm2ddl.a
 2025-02-26 13:57:32 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
 2025-02-26 13:57:36 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2025-02-26 13:57:37 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.796 seconds (process running for 6.395)
+2025-02-26 14:20:09 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 18868 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-26 14:20:09 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-26 14:20:14 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-26 14:20:15 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.685 seconds (process running for 6.317)
+2025-02-26 14:20:33 [http-nio-4040-exec-1] INFO  c.e.E.controller.EmployeeController - Fetching employee with ID: 10
+2025-02-26 14:20:33 [http-nio-4040-exec-1] INFO  c.e.E.service.EmployeeService - Fetching employee with ID: 10
+2025-02-26 14:20:33 [http-nio-4040-exec-1] WARN  o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolved [com.example.EmployeePayrollApp.exception.EmployeeNotFoundException: Employee with ID 10 not found]
+2025-02-26 14:21:03 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Fetching employee with ID: 9
+2025-02-26 14:21:03 [http-nio-4040-exec-3] INFO  c.e.E.service.EmployeeService - Fetching employee with ID: 9
+2025-02-26 14:21:03 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Employee found: com.example.EmployeePayrollApp.dto.EmployeeDTO@541de37f
+2025-02-26 14:21:15 [http-nio-4040-exec-5] INFO  c.e.E.controller.EmployeeController - Fetching all employees
+2025-02-26 14:21:15 [http-nio-4040-exec-5] INFO  c.e.E.service.EmployeeService - Fetching all employees from database
+2025-02-26 14:21:15 [http-nio-4040-exec-5] INFO  c.e.E.service.EmployeeService - Retrieved 8 employees
+2025-02-26 14:21:15 [http-nio-4040-exec-5] INFO  c.e.E.controller.EmployeeController - Retrieved 8 employees
+2025-02-26 14:21:29 [http-nio-4040-exec-4] INFO  c.e.E.controller.EmployeeController - Deleting employee with ID: 1
+2025-02-26 14:21:30 [http-nio-4040-exec-4] INFO  c.e.E.service.EmployeeService - Deleting employee with ID: 1
+2025-02-26 14:21:30 [http-nio-4040-exec-4] INFO  c.e.E.service.EmployeeService - Employee with ID 1 deleted successfully
+2025-02-26 14:21:30 [http-nio-4040-exec-4] INFO  c.e.E.controller.EmployeeController - Employee with ID 1 deleted successfully
+2025-02-26 14:21:35 [http-nio-4040-exec-6] INFO  c.e.E.controller.EmployeeController - Fetching employee with ID: 1
+2025-02-26 14:21:35 [http-nio-4040-exec-6] INFO  c.e.E.service.EmployeeService - Fetching employee with ID: 1
+2025-02-26 14:21:35 [http-nio-4040-exec-6] WARN  o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolved [com.example.EmployeePayrollApp.exception.EmployeeNotFoundException: Employee with ID 1 not found]
+2025-02-26 14:21:56 [http-nio-4040-exec-7] INFO  c.e.E.controller.EmployeeController - Updating employee with ID: 1
+2025-02-26 14:21:56 [http-nio-4040-exec-7] ERROR c.e.E.controller.EmployeeController - Failed to update. Employee with ID 1 not found: 404 NOT_FOUND "Employee with ID 1 not found"
