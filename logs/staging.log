@@ -1,9 +1,13 @@
-2025-02-26 12:38:14 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 12992 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
-2025-02-26 12:38:14 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
-2025-02-26 12:38:18 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-26 12:38:19 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 6.086 seconds (process running for 6.875)
-2025-02-26 12:39:03 [http-nio-4040-exec-1] INFO  c.e.E.controller.EmployeeController - Received request to create employee: com.example.EmployeePayrollApp.dto.EmployeeDTO@1304c514
-2025-02-26 12:39:03 [http-nio-4040-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.orm.ObjectOptimisticLockingFailureException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [com.example.EmployeePayrollApp.entity.Employee#0]] with root cause
+2025-02-27 11:39:12 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 4100 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 11:39:12 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 11:39:17 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 11:39:17 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.783 seconds (process running for 6.481)
+2025-02-27 11:42:14 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 18824 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 11:42:14 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 11:42:20 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 11:42:20 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 7.139 seconds (process running for 7.805)
+2025-02-27 11:45:49 [http-nio-4040-exec-1] INFO  c.e.E.controller.EmployeeController - Received request to create employee: EmployeeDTO(id=0, name=rajiv mishra, salary=60008.0, gender=Male, startDate=12/12/12, note=all good, profilePic=src/main/resources/static/pic.jpg, department=[dev, tester])
+2025-02-27 11:45:49 [http-nio-4040-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.orm.ObjectOptimisticLockingFailureException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [com.example.EmployeePayrollApp.entity.Employee#0]] with root cause
 org.hibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [com.example.EmployeePayrollApp.entity.Employee#0]
 	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsDetached(DefaultMergeEventListener.java:426)
 	at org.hibernate.event.internal.DefaultMergeEventListener.merge(DefaultMergeEventListener.java:214)
@@ -16,11 +20,11 @@ org.hibernate.StaleObjectStateException: Row was updated or deleted by another t
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364)
-	at jdk.proxy4/jdk.proxy4.$Proxy117.merge(Unknown Source)
+	at jdk.proxy4/jdk.proxy4.$Proxy120.merge(Unknown Source)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:320)
-	at jdk.proxy4/jdk.proxy4.$Proxy117.merge(Unknown Source)
+	at jdk.proxy4/jdk.proxy4.$Proxy120.merge(Unknown Source)
 	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:639)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -45,9 +49,19 @@ org.hibernate.StaleObjectStateException: Row was updated or deleted by another t
 	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
-	at jdk.proxy4/jdk.proxy4.$Proxy120.save(Unknown Source)
-	at com.example.EmployeePayrollApp.service.EmployeeService.createEmployee(EmployeeService.java:55)
-	at com.example.EmployeePayrollApp.controller.EmployeeController.createEmployee(EmployeeController.java:25)
+	at jdk.proxy4/jdk.proxy4.$Proxy123.save(Unknown Source)
+	at com.example.EmployeePayrollApp.service.EmployeeService.createEmployee(EmployeeService.java:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+	at com.example.EmployeePayrollApp.service.EmployeeService$$SpringCGLIB$$0.createEmployee(<generated>)
+	at com.example.EmployeePayrollApp.controller.EmployeeController.createEmployee(EmployeeController.java:28)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
@@ -96,151 +110,343 @@ org.hibernate.StaleObjectStateException: Row was updated or deleted by another t
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:1575)
-2025-02-26 12:43:31 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 9412 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
-2025-02-26 12:43:31 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
-2025-02-26 12:43:36 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-26 12:43:36 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.917 seconds (process running for 6.543)
-2025-02-26 12:43:45 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Received request to create employee: com.example.EmployeePayrollApp.dto.EmployeeDTO@4119e7eb
-2025-02-26 12:43:45 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Employee created successfully with ID 6: com.example.EmployeePayrollApp.dto.EmployeeDTO@e449ee8
-2025-02-26 12:44:10 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 9684 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
-2025-02-26 12:44:10 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
-2025-02-26 12:44:15 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-26 12:44:15 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.158 seconds (process running for 5.731)
-2025-02-26 12:44:34 [http-nio-4040-exec-2] INFO  c.e.E.controller.EmployeeController - Received request to create employee: com.example.EmployeePayrollApp.dto.EmployeeDTO@1c229428
-2025-02-26 12:44:34 [http-nio-4040-exec-2] INFO  c.e.E.controller.EmployeeController - Employee created successfully with ID 7: com.example.EmployeePayrollApp.dto.EmployeeDTO@73034586
-2025-02-26 12:52:36 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 6920 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
-2025-02-26 12:52:36 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
-2025-02-26 12:52:41 [restartedMain] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Access denied for user '${DB_USERNAME}'@'localhost' (using password: YES)
-2025-02-26 12:52:41 [restartedMain] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.IllegalArgumentException: Unrecognized 'hibernate.hbm2ddl.auto' setting: 'update  # Change to validate in production'
-2025-02-26 12:52:41 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.IllegalArgumentException: Unrecognized 'hibernate.hbm2ddl.auto' setting: 'update  # Change to validate in production'
-2025-02-26 12:52:41 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.IllegalArgumentException: Unrecognized 'hibernate.hbm2ddl.auto' setting: 'update  # Change to validate in production'
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at com.example.EmployeePayrollApp.EmployeePayrollAppApplication.main(EmployeePayrollAppApplication.java:11)
+2025-02-27 12:13:29 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 12764 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 12:13:29 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 12:13:34 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 12:13:34 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.56 seconds (process running for 6.201)
+2025-02-27 12:19:00 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 19596 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 12:19:00 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 12:19:05 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 12:19:06 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 6.48 seconds (process running for 7.315)
+2025-02-27 12:19:36 [http-nio-4040-exec-1] INFO  c.e.E.controller.EmployeeController - Received request to create employee: EmployeeDTO(id=0, name=rajiv mishra, salary=60008.0, gender=Male, startDate=12/12/12, note=all good, profilePic=src/main/resources/static/pic.jpg, department=[dev, tester])
+2025-02-27 12:19:36 [http-nio-4040-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.orm.ObjectOptimisticLockingFailureException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [com.example.EmployeePayrollApp.entity.Employee#0]] with root cause
+org.hibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [com.example.EmployeePayrollApp.entity.Employee#0]
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsDetached(DefaultMergeEventListener.java:426)
+	at org.hibernate.event.internal.DefaultMergeEventListener.merge(DefaultMergeEventListener.java:214)
+	at org.hibernate.event.internal.DefaultMergeEventListener.doMerge(DefaultMergeEventListener.java:152)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:136)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:89)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:854)
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:840)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.IllegalArgumentException: Unrecognized 'hibernate.hbm2ddl.auto' setting: 'update  # Change to validate in production'
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
-	... 18 common frames omitted
-Caused by: java.lang.IllegalArgumentException: Unrecognized 'hibernate.hbm2ddl.auto' setting: 'update  # Change to validate in production'
-	at org.hibernate.tool.schema.Action.interpretHbm2ddlSetting(Action.java:305)
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator$ActionGrouping.determineAutoSettingImpliedAction(SchemaManagementToolCoordinator.java:721)
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator$ActionGrouping.interpret(SchemaManagementToolCoordinator.java:729)
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator$ActionGrouping.interpret(SchemaManagementToolCoordinator.java:766)
-	at org.hibernate.boot.internal.MetadataImpl.shouldOrderTableColumns(MetadataImpl.java:476)
-	at org.hibernate.boot.internal.MetadataImpl.orderColumns(MetadataImpl.java:405)
-	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:281)
-	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517)
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
-	... 22 common frames omitted
-2025-02-26 12:53:41 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 11348 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
-2025-02-26 12:53:41 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
-2025-02-26 12:53:46 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-26 12:53:46 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.412 seconds (process running for 6.011)
-2025-02-26 13:13:46 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 16780 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
-2025-02-26 13:13:46 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
-2025-02-26 13:13:51 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-26 13:13:51 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.723 seconds (process running for 6.304)
-2025-02-26 13:14:36 [http-nio-4040-exec-1] INFO  c.e.E.controller.EmployeeController - Received request to create employee: com.example.EmployeePayrollApp.dto.EmployeeDTO@38abe2b2
-2025-02-26 13:14:36 [http-nio-4040-exec-1] INFO  c.e.E.controller.EmployeeController - Employee created successfully with ID 8: com.example.EmployeePayrollApp.dto.EmployeeDTO@56e1bd4f
-2025-02-26 13:14:43 [http-nio-4040-exec-4] INFO  c.e.E.controller.EmployeeController - Fetching all employees
-2025-02-26 13:14:43 [http-nio-4040-exec-4] INFO  c.e.E.service.EmployeeService - Fetching all employees from database
-2025-02-26 13:14:43 [http-nio-4040-exec-4] INFO  c.e.E.service.EmployeeService - Retrieved 8 employees
-2025-02-26 13:14:43 [http-nio-4040-exec-4] INFO  c.e.E.controller.EmployeeController - Retrieved 8 employees
-2025-02-26 13:15:21 [http-nio-4040-exec-5] INFO  c.e.E.controller.EmployeeController - Updating employee with ID: 7
-2025-02-26 13:15:21 [http-nio-4040-exec-5] INFO  c.e.E.service.EmployeeService - Updating employee with ID: 7
-2025-02-26 13:15:21 [http-nio-4040-exec-5] ERROR c.e.E.controller.EmployeeController - Failed to update. Employee with ID 7 not found
-2025-02-26 13:20:36 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 9684 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
-2025-02-26 13:20:36 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
-2025-02-26 13:20:40 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-26 13:20:40 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.333 seconds (process running for 5.928)
-2025-02-26 13:20:53 [http-nio-4040-exec-2] INFO  c.e.E.controller.EmployeeController - Fetching employee with ID: 7
-2025-02-26 13:20:53 [http-nio-4040-exec-2] INFO  c.e.E.service.EmployeeService - Fetching employee with ID: 7
-2025-02-26 13:20:53 [http-nio-4040-exec-2] INFO  c.e.E.controller.EmployeeController - Employee found: com.example.EmployeePayrollApp.dto.EmployeeDTO@174351ff
-2025-02-26 13:21:02 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Updating employee with ID: 7
-2025-02-26 13:21:02 [http-nio-4040-exec-3] INFO  c.e.E.service.EmployeeService - Updating employee with ID: 7
-2025-02-26 13:21:02 [http-nio-4040-exec-3] ERROR c.e.E.controller.EmployeeController - Unexpected error while updating employee with ID 7: identifier of an instance of com.example.EmployeePayrollApp.entity.Employee was altered from 0 to 7
-2025-02-26 13:24:53 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 21804 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
-2025-02-26 13:24:53 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
-2025-02-26 13:24:58 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-26 13:24:58 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.506 seconds (process running for 6.07)
-2025-02-26 13:25:05 [http-nio-4040-exec-2] INFO  c.e.E.controller.EmployeeController - Updating employee with ID: 7
-2025-02-26 13:25:05 [http-nio-4040-exec-2] INFO  c.e.E.controller.EmployeeController - Employee with ID 7 updated successfully
-2025-02-26 13:26:50 [http-nio-4040-exec-5] INFO  c.e.E.controller.EmployeeController - Fetching employee with ID: 6
-2025-02-26 13:26:50 [http-nio-4040-exec-5] INFO  c.e.E.service.EmployeeService - Fetching employee with ID: 6
-2025-02-26 13:26:50 [http-nio-4040-exec-5] INFO  c.e.E.controller.EmployeeController - Employee found: com.example.EmployeePayrollApp.dto.EmployeeDTO@648c64a8
-2025-02-26 13:26:56 [http-nio-4040-exec-6] INFO  c.e.E.controller.EmployeeController - Deleting employee with ID: 6
-2025-02-26 13:26:57 [http-nio-4040-exec-6] INFO  c.e.E.service.EmployeeService - Deleting employee with ID: 6
-2025-02-26 13:26:57 [http-nio-4040-exec-6] INFO  c.e.E.service.EmployeeService - Employee with ID 6 deleted successfully
-2025-02-26 13:26:57 [http-nio-4040-exec-6] INFO  c.e.E.controller.EmployeeController - Employee with ID 6 deleted successfully
-2025-02-26 13:27:04 [http-nio-4040-exec-7] INFO  c.e.E.controller.EmployeeController - Fetching employee with ID: 6
-2025-02-26 13:27:04 [http-nio-4040-exec-7] INFO  c.e.E.service.EmployeeService - Fetching employee with ID: 6
-2025-02-26 13:27:04 [http-nio-4040-exec-7] WARN  c.e.E.controller.EmployeeController - Employee with ID 6 not found
-2025-02-26 13:27:11 [http-nio-4040-exec-8] INFO  c.e.E.controller.EmployeeController - Fetching all employees
-2025-02-26 13:27:11 [http-nio-4040-exec-8] INFO  c.e.E.service.EmployeeService - Fetching all employees from database
-2025-02-26 13:27:11 [http-nio-4040-exec-8] INFO  c.e.E.service.EmployeeService - Retrieved 7 employees
-2025-02-26 13:27:11 [http-nio-4040-exec-8] INFO  c.e.E.controller.EmployeeController - Retrieved 7 employees
-2025-02-26 13:38:16 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 1728 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
-2025-02-26 13:38:16 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
-2025-02-26 13:38:21 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-26 13:38:21 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.509 seconds (process running for 6.082)
-2025-02-26 13:38:55 [http-nio-4040-exec-2] INFO  c.e.E.controller.EmployeeController - Received request to create employee: com.example.EmployeePayrollApp.dto.EmployeeDTO@66fddda9
-2025-02-26 13:38:55 [http-nio-4040-exec-2] INFO  c.e.E.controller.EmployeeController - Employee created successfully with ID 9: com.example.EmployeePayrollApp.dto.EmployeeDTO@4f92ae83
-2025-02-26 13:39:21 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Updating employee with ID: 9
-2025-02-26 13:39:21 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Employee with ID 9 updated successfully
-2025-02-26 13:39:29 [http-nio-4040-exec-4] INFO  c.e.E.controller.EmployeeController - Fetching employee with ID: 9
-2025-02-26 13:39:29 [http-nio-4040-exec-4] INFO  c.e.E.service.EmployeeService - Fetching employee with ID: 9
-2025-02-26 13:39:29 [http-nio-4040-exec-4] INFO  c.e.E.controller.EmployeeController - Employee found: com.example.EmployeePayrollApp.dto.EmployeeDTO@5a9d075
-2025-02-26 13:39:33 [http-nio-4040-exec-5] INFO  c.e.E.controller.EmployeeController - Fetching all employees
-2025-02-26 13:39:33 [http-nio-4040-exec-5] INFO  c.e.E.service.EmployeeService - Fetching all employees from database
-2025-02-26 13:39:33 [http-nio-4040-exec-5] INFO  c.e.E.service.EmployeeService - Retrieved 8 employees
-2025-02-26 13:39:33 [http-nio-4040-exec-5] INFO  c.e.E.controller.EmployeeController - Retrieved 8 employees
-2025-02-26 13:57:32 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 12040 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
-2025-02-26 13:57:32 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
-2025-02-26 13:57:36 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-26 13:57:37 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.796 seconds (process running for 6.395)
-2025-02-26 14:20:09 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 18868 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
-2025-02-26 14:20:09 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
-2025-02-26 14:20:14 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-26 14:20:15 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.685 seconds (process running for 6.317)
-2025-02-26 14:20:33 [http-nio-4040-exec-1] INFO  c.e.E.controller.EmployeeController - Fetching employee with ID: 10
-2025-02-26 14:20:33 [http-nio-4040-exec-1] INFO  c.e.E.service.EmployeeService - Fetching employee with ID: 10
-2025-02-26 14:20:33 [http-nio-4040-exec-1] WARN  o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolved [com.example.EmployeePayrollApp.exception.EmployeeNotFoundException: Employee with ID 10 not found]
-2025-02-26 14:21:03 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Fetching employee with ID: 9
-2025-02-26 14:21:03 [http-nio-4040-exec-3] INFO  c.e.E.service.EmployeeService - Fetching employee with ID: 9
-2025-02-26 14:21:03 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Employee found: com.example.EmployeePayrollApp.dto.EmployeeDTO@541de37f
-2025-02-26 14:21:15 [http-nio-4040-exec-5] INFO  c.e.E.controller.EmployeeController - Fetching all employees
-2025-02-26 14:21:15 [http-nio-4040-exec-5] INFO  c.e.E.service.EmployeeService - Fetching all employees from database
-2025-02-26 14:21:15 [http-nio-4040-exec-5] INFO  c.e.E.service.EmployeeService - Retrieved 8 employees
-2025-02-26 14:21:15 [http-nio-4040-exec-5] INFO  c.e.E.controller.EmployeeController - Retrieved 8 employees
-2025-02-26 14:21:29 [http-nio-4040-exec-4] INFO  c.e.E.controller.EmployeeController - Deleting employee with ID: 1
-2025-02-26 14:21:30 [http-nio-4040-exec-4] INFO  c.e.E.service.EmployeeService - Deleting employee with ID: 1
-2025-02-26 14:21:30 [http-nio-4040-exec-4] INFO  c.e.E.service.EmployeeService - Employee with ID 1 deleted successfully
-2025-02-26 14:21:30 [http-nio-4040-exec-4] INFO  c.e.E.controller.EmployeeController - Employee with ID 1 deleted successfully
-2025-02-26 14:21:35 [http-nio-4040-exec-6] INFO  c.e.E.controller.EmployeeController - Fetching employee with ID: 1
-2025-02-26 14:21:35 [http-nio-4040-exec-6] INFO  c.e.E.service.EmployeeService - Fetching employee with ID: 1
-2025-02-26 14:21:35 [http-nio-4040-exec-6] WARN  o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolved [com.example.EmployeePayrollApp.exception.EmployeeNotFoundException: Employee with ID 1 not found]
-2025-02-26 14:21:56 [http-nio-4040-exec-7] INFO  c.e.E.controller.EmployeeController - Updating employee with ID: 1
-2025-02-26 14:21:56 [http-nio-4040-exec-7] ERROR c.e.E.controller.EmployeeController - Failed to update. Employee with ID 1 not found: 404 NOT_FOUND "Employee with ID 1 not found"
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364)
+	at jdk.proxy4/jdk.proxy4.$Proxy120.merge(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:320)
+	at jdk.proxy4/jdk.proxy4.$Proxy120.merge(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:639)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:515)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:284)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:752)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:174)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy4/jdk.proxy4.$Proxy123.save(Unknown Source)
+	at com.example.EmployeePayrollApp.service.EmployeeService.createEmployee(EmployeeService.java:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+	at com.example.EmployeePayrollApp.service.EmployeeService$$SpringCGLIB$$0.createEmployee(<generated>)
+	at com.example.EmployeePayrollApp.controller.EmployeeController.createEmployee(EmployeeController.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-02-27 12:22:01 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 10020 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 12:22:01 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 12:22:05 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 12:22:06 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.515 seconds (process running for 6.08)
+2025-02-27 12:22:09 [http-nio-4040-exec-1] INFO  c.e.E.controller.EmployeeController - Received request to create employee: EmployeeDTO(id=0, name=rajiv mishra, salary=60008.0, gender=Male, startDate=12/12/12, note=all good, profilePic=src/main/resources/static/pic.jpg, department=[dev, tester])
+2025-02-27 12:22:09 [http-nio-4040-exec-1] ERROR c.e.E.service.EmployeeService - Error creating employee: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [com.example.EmployeePayrollApp.entity.Employee#0]
+2025-02-27 12:22:09 [http-nio-4040-exec-1] WARN  o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolved [org.springframework.web.server.ResponseStatusException: 500 INTERNAL_SERVER_ERROR "Failed to create employee"]
+2025-02-27 12:31:49 [http-nio-4040-exec-4] INFO  c.e.E.controller.EmployeeController - Received request to create employee: EmployeeDTO(id=0, name=rajiv mishra, salary=60008.0, gender=Male, startDate=12-12-12, note=all good, profilePic=src/main/resources/static/pic.jpg, department=[dev, tester])
+2025-02-27 12:31:49 [http-nio-4040-exec-4] ERROR c.e.E.service.EmployeeService - Error creating employee: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [com.example.EmployeePayrollApp.entity.Employee#0]
+2025-02-27 12:31:49 [http-nio-4040-exec-4] WARN  o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolved [org.springframework.web.server.ResponseStatusException: 500 INTERNAL_SERVER_ERROR "Failed to create employee"]
+2025-02-27 12:34:45 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 19288 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 12:34:45 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 12:34:51 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 12:34:52 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 7.007 seconds (process running for 7.605)
+2025-02-27 12:34:53 [http-nio-4040-exec-1] INFO  c.e.E.controller.EmployeeController - Received request to create employee: EmployeeDTO(id=0, name=rajiv mishra, salary=60008.0, gender=Male, startDate=12-12-12, note=all good, profilePic=src/main/resources/static/pic.jpg, department=[dev, tester])
+2025-02-27 12:34:53 [http-nio-4040-exec-1] ERROR c.e.E.service.EmployeeService - Error creating employee: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [com.example.EmployeePayrollApp.entity.Employee#0]
+2025-02-27 12:34:53 [http-nio-4040-exec-1] WARN  o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolved [org.springframework.web.server.ResponseStatusException: 500 INTERNAL_SERVER_ERROR "Failed to create employee"]
+2025-02-27 12:37:46 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 14072 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 12:37:46 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 12:37:50 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 12:37:50 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.288 seconds (process running for 5.868)
+2025-02-27 12:37:56 [http-nio-4040-exec-2] INFO  c.e.E.controller.EmployeeController - Received request to create employee: EmployeeDTO(id=0, name=rajiv mishra, salary=60008.0, gender=Male, startDate=12-12-12, note=all good, profilePic=src/main/resources/static/pic.jpg, department=[dev, tester])
+2025-02-27 12:37:57 [http-nio-4040-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Field 'roll' doesn't have a default value
+2025-02-27 12:37:57 [http-nio-4040-exec-2] ERROR c.e.E.service.EmployeeService - Error creating employee: could not execute statement [Field 'roll' doesn't have a default value] [insert into employees (department,gender,name,note,profile_pic,salary,start_date) values (?,?,?,?,?,?,?)]
+2025-02-27 12:37:57 [http-nio-4040-exec-2] WARN  o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolved [org.springframework.web.server.ResponseStatusException: 500 INTERNAL_SERVER_ERROR "Failed to create employee"]
+2025-02-27 12:43:15 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 15260 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 12:43:15 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 12:43:20 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 12:43:21 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 6.755 seconds (process running for 7.384)
+2025-02-27 12:43:21 [http-nio-4040-exec-2] INFO  c.e.E.controller.EmployeeController - Received request to create employee: EmployeeDTO(id=0, name=rajiv mishra, salary=60008.0, gender=Male, startDate=12-12-12, note=all good, profilePic=src/main/resources/static/pic.jpg, department=[dev, tester])
+2025-02-27 12:43:21 [http-nio-4040-exec-2] ERROR c.e.E.service.EmployeeService - Error creating employee: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [com.example.EmployeePayrollApp.entity.Employee#0]
+2025-02-27 12:43:21 [http-nio-4040-exec-2] WARN  o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolved [org.springframework.web.server.ResponseStatusException: 500 INTERNAL_SERVER_ERROR "Failed to create employee"]
+2025-02-27 12:44:51 [http-nio-4040-exec-5] INFO  c.e.E.controller.EmployeeController - Received request to create employee: EmployeeDTO(id=0, name=rajiv mishra, salary=60008.0, gender=Male, startDate=12-12-12, note=all good, profilePic=src/main/resources/static/pic.jpg, department=[dev, tester])
+2025-02-27 12:44:51 [http-nio-4040-exec-5] ERROR c.e.E.service.EmployeeService - Error creating employee: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [com.example.EmployeePayrollApp.entity.Employee#0]
+2025-02-27 12:44:51 [http-nio-4040-exec-5] WARN  o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolved [org.springframework.web.server.ResponseStatusException: 500 INTERNAL_SERVER_ERROR "Failed to create employee"]
+2025-02-27 12:49:11 [http-nio-4040-exec-7] INFO  c.e.E.controller.EmployeeController - Received request to create employee: EmployeeDTO(id=0, name=rajiv mishra, salary=60008.0, gender=Male, startDate=12-12-12, note=all good, profilePic=src/main/resources/static/pic.jpg, department=[dev, tester])
+2025-02-27 12:49:11 [http-nio-4040-exec-7] ERROR c.e.E.service.EmployeeService - Error creating employee: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [com.example.EmployeePayrollApp.entity.Employee#0]
+2025-02-27 12:49:11 [http-nio-4040-exec-7] WARN  o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolved [org.springframework.web.server.ResponseStatusException: 500 INTERNAL_SERVER_ERROR "Failed to create employee"]
+2025-02-27 12:49:19 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 4780 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 12:49:19 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 12:49:24 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 12:49:24 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.418 seconds (process running for 5.981)
+2025-02-27 12:49:28 [http-nio-4040-exec-2] INFO  c.e.E.controller.EmployeeController - Received request to create employee: EmployeeDTO(id=0, name=rajiv mishra, salary=60008.0, gender=Male, startDate=12-12-12, note=all good, profilePic=src/main/resources/static/pic.jpg, department=[dev, tester])
+2025-02-27 12:49:28 [http-nio-4040-exec-2] ERROR c.e.E.service.EmployeeService - Error creating employee: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [com.example.EmployeePayrollApp.entity.Employee#0]
+2025-02-27 12:49:28 [http-nio-4040-exec-2] WARN  o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolved [org.springframework.web.server.ResponseStatusException: 500 INTERNAL_SERVER_ERROR "Failed to create employee"]
+2025-02-27 12:51:48 [http-nio-4040-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+2025-02-27 12:51:56 [http-nio-4040-exec-5] INFO  c.e.E.controller.EmployeeController - Received request to create employee: EmployeeDTO(id=0, name=rajiv mishra, salary=60008.0, gender=Male, startDate=12-12-12, note=all good, profilePic=src/main/resources/static/pic.jpg, department=[dev, tester])
+2025-02-27 12:51:56 [http-nio-4040-exec-5] ERROR c.e.E.service.EmployeeService - Error creating employee: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [com.example.EmployeePayrollApp.entity.Employee#0]
+2025-02-27 12:51:56 [http-nio-4040-exec-5] WARN  o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolved [org.springframework.web.server.ResponseStatusException: 500 INTERNAL_SERVER_ERROR "Failed to create employee"]
+2025-02-27 12:57:01 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 20668 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 12:57:01 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 12:57:06 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 12:57:06 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.888 seconds (process running for 6.459)
+2025-02-27 12:57:11 [http-nio-4040-exec-2] INFO  c.e.E.controller.EmployeeController - Received request to create employee: EmployeeDTO(id=0, name=rajiv mishra, salary=60008.0, gender=Male, startDate=12-12-12, note=all good, profilePic=src/main/resources/static/pic.jpg, department=[dev, tester])
+2025-02-27 12:57:11 [http-nio-4040-exec-2] ERROR c.e.E.service.EmployeeService - Error creating employee: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [com.example.EmployeePayrollApp.entity.Employee#0]
+2025-02-27 12:57:11 [http-nio-4040-exec-2] WARN  o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolved [org.springframework.web.server.ResponseStatusException: 500 INTERNAL_SERVER_ERROR "Failed to create employee"]
+2025-02-27 12:58:29 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 6204 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 12:58:29 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 12:58:34 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 12:58:35 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 6.408 seconds (process running for 6.985)
+2025-02-27 12:58:41 [http-nio-4040-exec-1] INFO  c.e.E.controller.EmployeeController - Received request to create employee: EmployeeDTO(id=0, name=rajiv mishra, salary=60008.0, gender=Male, startDate=12-12-12, note=all good, profilePic=src/main/resources/static/pic.jpg, department=[dev, tester])
+2025-02-27 12:58:41 [http-nio-4040-exec-1] ERROR c.e.E.service.EmployeeService - Error creating employee: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [com.example.EmployeePayrollApp.entity.Employee#0]
+2025-02-27 12:58:41 [http-nio-4040-exec-1] WARN  o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolved [org.springframework.web.server.ResponseStatusException: 500 INTERNAL_SERVER_ERROR "Failed to create employee"]
+2025-02-27 13:02:33 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 21928 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 13:02:33 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 13:02:38 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 13:02:38 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.848 seconds (process running for 6.444)
+2025-02-27 13:02:53 [http-nio-4040-exec-2] INFO  c.e.E.controller.EmployeeController - Received request to create employee: EmployeeDTO(id=0, name=rajiv mishra, salary=60008.0, gender=Male, startDate=12-12-12, note=all good, profilePic=src/main/resources/static/pic.jpg, department=[dev, tester])
+2025-02-27 13:02:53 [http-nio-4040-exec-2] ERROR c.e.E.service.EmployeeService - Error creating employee: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [com.example.EmployeePayrollApp.entity.Employee#0]
+2025-02-27 13:02:53 [http-nio-4040-exec-2] WARN  o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolved [org.springframework.web.server.ResponseStatusException: 500 INTERNAL_SERVER_ERROR "Failed to create employee"]
+2025-02-27 13:07:44 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 19516 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 13:07:44 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 13:07:48 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 13:07:49 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.371 seconds (process running for 5.984)
+2025-02-27 13:07:52 [http-nio-4040-exec-2] INFO  c.e.E.controller.EmployeeController - Received request to create employee: EmployeeDTO(id=0, name=rajiv mishra, salary=60008.0, gender=Male, startDate=12-12-12, note=all good, profilePic=src/main/resources/static/pic.jpg, department=[dev, tester])
+2025-02-27 13:07:52 [http-nio-4040-exec-2] ERROR c.e.E.service.EmployeeService - Error creating employee: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [com.example.EmployeePayrollApp.entity.Employee#0]
+2025-02-27 13:07:52 [http-nio-4040-exec-2] WARN  o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolved [org.springframework.web.server.ResponseStatusException: 500 INTERNAL_SERVER_ERROR "Failed to create employee"]
+2025-02-27 13:14:37 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 17752 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 13:14:37 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 13:14:41 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 13:14:41 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.274 seconds (process running for 5.842)
+2025-02-27 13:14:55 [http-nio-4040-exec-1] INFO  c.e.E.controller.EmployeeController - Received request to create employee: EmployeeDTO(id=0, name=rajiv mishra, salary=60008.0, gender=Male, startDate=12-12-12, note=all good, profilePic=src/main/resources/static/pic.jpg, department=[dev, tester])
+2025-02-27 13:14:55 [http-nio-4040-exec-1] ERROR c.e.E.service.EmployeeService - Error creating employee: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [com.example.EmployeePayrollApp.entity.Employee#0]
+2025-02-27 13:14:55 [http-nio-4040-exec-1] WARN  o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolved [org.springframework.web.server.ResponseStatusException: 500 INTERNAL_SERVER_ERROR "Failed to create employee"]
+2025-02-27 13:17:03 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 12928 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 13:17:03 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 13:17:08 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 13:17:08 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.339 seconds (process running for 5.948)
+2025-02-27 13:17:17 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Received request to create employee: EmployeeDTO(id=0, name=rajiv mishra, salary=60008.0, gender=Male, startDate=12-12-12, note=all good, profilePic=src/main/resources/static/pic.jpg, department=[dev, tester])
+2025-02-27 13:17:17 [http-nio-4040-exec-3] ERROR c.e.E.service.EmployeeService - Error creating employee: Detached entity with generated id '0' has an uninitialized version value 'null': com.example.EmployeePayrollApp.entity.Employee.version
+2025-02-27 13:17:17 [http-nio-4040-exec-3] WARN  o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolved [org.springframework.web.server.ResponseStatusException: 500 INTERNAL_SERVER_ERROR "Failed to create employee"]
+2025-02-27 13:35:55 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 16184 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 13:35:55 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 13:36:00 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 13:37:39 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 104.868 seconds (process running for 105.458)
+2025-02-27 13:38:28 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m29s415ms612µs600ns).
+2025-02-27 13:38:37 [http-nio-4040-exec-2] INFO  c.e.E.controller.EmployeeController - Received request to create employee: com.example.EmployeePayrollApp.dto.EmployeeDTO@eb3757d
+2025-02-27 13:38:37 [http-nio-4040-exec-2] INFO  c.e.E.controller.EmployeeController - Employee created successfully with ID 10: com.example.EmployeePayrollApp.dto.EmployeeDTO@77b010b6
+2025-02-27 13:39:00 [http-nio-4040-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.ArrayList<java.lang.Object>` from String value (token `JsonToken.VALUE_STRING`)]
+2025-02-27 13:39:40 [http-nio-4040-exec-4] INFO  c.e.E.controller.EmployeeController - Updating employee with ID: 10
+2025-02-27 13:39:40 [http-nio-4040-exec-4] INFO  c.e.E.controller.EmployeeController - Employee with ID 10 updated successfully
+2025-02-27 13:39:53 [http-nio-4040-exec-6] INFO  c.e.E.controller.EmployeeController - Fetching employee with ID: 10
+2025-02-27 13:39:53 [http-nio-4040-exec-6] INFO  c.e.E.service.EmployeeService - Fetching employee with ID: 10
+2025-02-27 13:39:53 [http-nio-4040-exec-6] INFO  c.e.E.controller.EmployeeController - Employee found: com.example.EmployeePayrollApp.dto.EmployeeDTO@759cd7f5
+2025-02-27 13:39:57 [http-nio-4040-exec-7] INFO  c.e.E.controller.EmployeeController - Fetching all employees
+2025-02-27 13:39:57 [http-nio-4040-exec-7] INFO  c.e.E.service.EmployeeService - Fetching all employees from database
+2025-02-27 13:39:57 [http-nio-4040-exec-7] INFO  c.e.E.service.EmployeeService - Retrieved 8 employees
+2025-02-27 13:39:57 [http-nio-4040-exec-7] INFO  c.e.E.controller.EmployeeController - Retrieved 8 employees
+2025-02-27 13:46:44 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 18612 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 13:46:44 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 13:46:49 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 13:46:49 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 6.195 seconds (process running for 6.817)
+2025-02-27 13:47:07 [http-nio-4040-exec-1] INFO  c.e.E.controller.EmployeeController - Received request to create employee: com.example.EmployeePayrollApp.dto.EmployeeDTO@704b8a2d
+2025-02-27 13:47:07 [http-nio-4040-exec-1] INFO  c.e.E.controller.EmployeeController - Employee created successfully with ID 11: com.example.EmployeePayrollApp.dto.EmployeeDTO@73c3681a
+2025-02-27 13:47:15 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Fetching all employees
+2025-02-27 13:47:15 [http-nio-4040-exec-3] INFO  c.e.E.service.EmployeeService - Fetching all employees from database
+2025-02-27 13:47:15 [http-nio-4040-exec-3] INFO  c.e.E.service.EmployeeService - Retrieved 9 employees
+2025-02-27 13:47:15 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Retrieved 9 employees
+2025-02-27 13:52:15 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 20760 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 13:52:15 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 13:52:20 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 13:52:20 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 6.284 seconds (process running for 6.878)
+2025-02-27 13:52:58 [http-nio-4040-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDate` from String "12-12-12": Failed to deserialize java.time.LocalDate: (java.time.format.DateTimeParseException) Text '12-12-12' could not be parsed at index 0]
+2025-02-27 13:54:59 [http-nio-4040-exec-4] INFO  c.e.E.controller.EmployeeController - Received request to create employee: com.example.EmployeePayrollApp.dto.EmployeeDTO@309fa00a
+2025-02-27 13:54:59 [http-nio-4040-exec-4] INFO  c.e.E.controller.EmployeeController - Employee created successfully with ID 12: com.example.EmployeePayrollApp.dto.EmployeeDTO@2631c94b
+2025-02-27 13:56:12 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 17080 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 13:56:12 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 13:56:17 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 13:56:18 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 6.009 seconds (process running for 6.573)
+2025-02-27 13:56:38 [http-nio-4040-exec-2] INFO  c.e.E.controller.EmployeeController - Fetching employee with ID: 11
+2025-02-27 13:56:38 [http-nio-4040-exec-2] INFO  c.e.E.service.EmployeeService - Fetching employee with ID: 11
+2025-02-27 13:56:38 [http-nio-4040-exec-2] INFO  c.e.E.controller.EmployeeController - Employee found: com.example.EmployeePayrollApp.dto.EmployeeDTO@25db58d4
+2025-02-27 13:56:48 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Fetching all employees
+2025-02-27 13:56:48 [http-nio-4040-exec-3] INFO  c.e.E.service.EmployeeService - Fetching all employees from database
+2025-02-27 13:56:48 [http-nio-4040-exec-3] INFO  c.e.E.service.EmployeeService - Retrieved 10 employees
+2025-02-27 13:56:48 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Retrieved 10 employees
+2025-02-27 13:57:13 [http-nio-4040-exec-4] INFO  c.e.E.controller.EmployeeController - Updating employee with ID: 12
+2025-02-27 13:57:13 [http-nio-4040-exec-4] INFO  c.e.E.controller.EmployeeController - Employee with ID 12 updated successfully
+2025-02-27 14:54:22 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 18456 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 14:54:22 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 14:54:27 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 14:54:27 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.975 seconds (process running for 6.663)
+2025-02-27 14:55:02 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Received request to create employee: com.example.EmployeePayrollApp.dto.EmployeeDTO@461637a8
+2025-02-27 14:55:03 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Employee created successfully with ID 13: com.example.EmployeePayrollApp.dto.EmployeeDTO@7c83af60
+2025-02-27 15:04:22 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 15480 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 15:04:22 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 15:04:27 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 15:04:27 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.572 seconds (process running for 6.159)
+2025-02-27 15:05:13 [http-nio-4040-exec-2] INFO  c.e.E.controller.EmployeeController - Received request to create employee: com.example.EmployeePayrollApp.dto.EmployeeDTO@78f90254
+2025-02-27 15:05:13 [http-nio-4040-exec-2] INFO  c.e.E.controller.EmployeeController - Employee created successfully with ID 14: com.example.EmployeePayrollApp.dto.EmployeeDTO@65fc0f45
+2025-02-27 15:05:23 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Fetching all employees
+2025-02-27 15:05:23 [http-nio-4040-exec-3] INFO  c.e.E.service.EmployeeService - Fetching all employees from database
+2025-02-27 15:05:23 [http-nio-4040-exec-3] INFO  c.e.E.service.EmployeeService - Retrieved 12 employees
+2025-02-27 15:05:23 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Retrieved 12 employees
+2025-02-27 15:07:28 [http-nio-4040-exec-7] INFO  c.e.E.controller.EmployeeController - Fetching employee with ID: 14
+2025-02-27 15:07:28 [http-nio-4040-exec-7] INFO  c.e.E.service.EmployeeService - Fetching employee with ID: 14
+2025-02-27 15:07:28 [http-nio-4040-exec-7] INFO  c.e.E.controller.EmployeeController - Employee found: com.example.EmployeePayrollApp.dto.EmployeeDTO@1a81b764
+2025-02-27 15:08:05 [http-nio-4040-exec-8] INFO  c.e.E.controller.EmployeeController - Updating employee with ID: 14
+2025-02-27 15:08:05 [http-nio-4040-exec-8] INFO  c.e.E.controller.EmployeeController - Employee with ID 14 updated successfully
+2025-02-27 15:09:41 [http-nio-4040-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2025-02-27 15:09:49 [http-nio-4040-exec-2] INFO  c.e.E.controller.EmployeeController - Updating employee with ID: 14
+2025-02-27 15:09:49 [http-nio-4040-exec-2] INFO  c.e.E.controller.EmployeeController - Employee with ID 14 updated successfully
+2025-02-27 15:10:47 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Received request to create employee: com.example.EmployeePayrollApp.dto.EmployeeDTO@cc3b7b0
+2025-02-27 15:10:47 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Employee created successfully with ID 15: com.example.EmployeePayrollApp.dto.EmployeeDTO@21db6148
+2025-02-27 15:16:10 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 11736 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 15:16:10 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 15:16:16 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 15:16:16 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 6.702 seconds (process running for 7.347)
+2025-02-27 15:16:21 [http-nio-4040-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.EmployeePayrollApp.dto.EmployeeDTO> com.example.EmployeePayrollApp.controller.EmployeeController.createEmployee(com.example.EmployeePayrollApp.dto.EmployeeDTO): [Field error in object 'employeeDTO' on field 'salary': rejected value [400.0]; codes [Min.employeeDTO.salary,Min.salary,Min.double,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDTO.salary,salary]; arguments []; default message [salary],500]; default message [min wedge should greater 500]] ]
+2025-02-27 15:16:39 [http-nio-4040-exec-4] INFO  c.e.E.controller.EmployeeController - Received request to create employee: com.example.EmployeePayrollApp.dto.EmployeeDTO@a68a127
+2025-02-27 15:16:39 [http-nio-4040-exec-4] INFO  c.e.E.controller.EmployeeController - Employee created successfully with ID 16: com.example.EmployeePayrollApp.dto.EmployeeDTO@5fe8a9ce
+2025-02-27 15:19:50 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 21148 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 15:19:50 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 15:19:55 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 15:19:55 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.534 seconds (process running for 6.122)
+2025-02-27 15:19:58 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Received request to create employee: com.example.EmployeePayrollApp.dto.EmployeeDTO@7b932b66
+2025-02-27 15:19:58 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Employee created successfully with ID 17: com.example.EmployeePayrollApp.dto.EmployeeDTO@65a278d5
+2025-02-27 15:21:07 [http-nio-4040-exec-6] INFO  c.e.E.controller.EmployeeController - Received request to create employee: com.example.EmployeePayrollApp.dto.EmployeeDTO@73b0c23
+2025-02-27 15:21:07 [http-nio-4040-exec-6] INFO  c.e.E.controller.EmployeeController - Employee created successfully with ID 18: com.example.EmployeePayrollApp.dto.EmployeeDTO@6158abfb
+2025-02-27 15:27:00 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 17496 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 15:27:00 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 15:27:04 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 15:27:05 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.6 seconds (process running for 6.177)
+2025-02-27 15:27:09 [http-nio-4040-exec-1] INFO  c.e.E.controller.EmployeeController - Received request to create employee: com.example.EmployeePayrollApp.dto.EmployeeDTO@5f60aa4a
+2025-02-27 15:27:09 [http-nio-4040-exec-1] INFO  c.e.E.controller.EmployeeController - Employee created successfully with ID 19: com.example.EmployeePayrollApp.dto.EmployeeDTO@188c5b9
+2025-02-27 15:28:57 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 11196 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 15:28:57 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 15:29:02 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 15:29:03 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 6.195 seconds (process running for 6.766)
+2025-02-27 15:29:03 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 1172 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 15:29:03 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 15:29:07 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 15:29:08 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2025-02-27 15:29:08 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-02-27 15:29:08 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 4040 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 4040 or configure this application to listen on another port.
+
+2025-02-27 15:33:54 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 13660 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 15:33:54 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 15:33:58 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 15:33:59 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.388 seconds (process running for 5.962)
+2025-02-27 15:34:23 [http-nio-4040-exec-2] INFO  c.e.E.controller.EmployeeController - Received request to create employee: com.example.EmployeePayrollApp.dto.EmployeeDTO@70af023d
+2025-02-27 15:34:23 [http-nio-4040-exec-2] INFO  c.e.E.controller.EmployeeController - Employee created successfully with ID 20: com.example.EmployeePayrollApp.dto.EmployeeDTO@4d2ce64a
+2025-02-27 15:34:55 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Updating employee with ID: 20
+2025-02-27 15:34:55 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Employee with ID 20 updated successfully
+2025-02-27 15:35:03 [http-nio-4040-exec-4] INFO  c.e.E.controller.EmployeeController - Updating employee with ID: 20
+2025-02-27 15:35:03 [http-nio-4040-exec-4] INFO  c.e.E.controller.EmployeeController - Employee with ID 20 updated successfully
+2025-02-27 15:41:32 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 8092 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 15:41:32 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 15:41:37 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 15:41:37 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 6.274 seconds (process running for 6.854)
+2025-02-27 15:43:25 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 20212 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-27 15:43:25 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-27 15:43:29 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 15:43:30 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.268 seconds (process running for 5.845)
+2025-02-27 15:44:43 [http-nio-4040-exec-1] INFO  c.e.E.controller.EmployeeController - Received request to create employee: com.example.EmployeePayrollApp.dto.EmployeeDTO@6f822fbb
+2025-02-27 15:44:43 [http-nio-4040-exec-1] INFO  c.e.E.controller.EmployeeController - Employee created successfully with ID 1: com.example.EmployeePayrollApp.dto.EmployeeDTO@57585420
